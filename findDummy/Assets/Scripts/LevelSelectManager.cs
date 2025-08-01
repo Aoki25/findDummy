@@ -41,8 +41,8 @@ public class LevelSelectManager : MonoBehaviour
         }
 
         pageText.text = $"{page}/{totalPages}";
-        prevButton.interactable = page > 1;
-        nextButton.interactable = page < totalPages;
+        //prevButton.interactable = page > 1;
+        //nextButton.interactable = page < totalPages;
     }
 
     public void NextPage()

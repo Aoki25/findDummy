@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 466058146}
   - component: {fileID: 466058147}
   m_Layer: 5
-  m_Name: GameManager
+  m_Name: StepLoader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

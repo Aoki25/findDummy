@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ReasoningPage_cla : MonoBehaviour
+public class FindObject : MonoBehaviour
 {
-    public Button Button;             // 确认按钮
+    public Button ConfirmButton;             // 确认按钮
 
     private Button selectBtn = null;       // 当前选中按钮
+    public Image img = null;
+    public GameObject foundSceneImage = null;
+
+    public NewBehaviourScript newBehaviourScript; // 关联的脚本
 
     /// <summary>
     /// 选中一个按钮
@@ -27,6 +31,16 @@ public class ReasoningPage_cla : MonoBehaviour
         selectBtn = _btn;       // 记录当前选中的按钮
         selectBtn.transform.Find("selectBox").gameObject.SetActive(true);     // 显示当前选中的框
         // 激活“确定”按钮
-        Button.interactable = true;
+        ConfirmButton.interactable = true;
+        if(foundSceneImage.gameObject.activeSelf==true)
+        {
+            this.img.sprite = selectBtn.GetComponent<Image>().sprite; // 设置图片为选中按钮的图片
+            this.img.gameObject.SetActive(true); // 显示图片
+        }
+    }
+    public void chuangru()
+    {
+         
     }
 }
+
