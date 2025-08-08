@@ -12,6 +12,10 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("SelectLevel");  // 名字必须与场景文件一致
     }
+    public void LoadLevel()
+    {
+        SceneManager.LoadScene("Level");  // 名字必须与场景文件一致
+    }
 
     public void QuitGame()
     {

@@ -7,7 +7,7 @@ public class ArrestPage : MonoBehaviour
 {
     public Button ConfirmArrestButton;             // 确认按钮
 
-    private Button selectBtn = null;       // 当前选中按钮
+    private Button selectBtn = null;       // 当前选中按钮 
 
     /// <summary>
     /// 选中一个按钮

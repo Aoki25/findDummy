@@ -11,7 +11,9 @@ public class FindObject : MonoBehaviour
     public Image img = null;
     public GameObject foundSceneImage = null;
 
-    public NewBehaviourScript newBehaviourScript; // 关联的脚本
+    public LevelManager newBehaviourScript; // 关联的脚本
+
+    public Image ReasoningPageImage; // 推理页图片
 
     /// <summary>
     /// 选中一个按钮
@@ -36,6 +38,7 @@ public class FindObject : MonoBehaviour
         {
             this.img.sprite = selectBtn.GetComponent<Image>().sprite; // 设置图片为选中按钮的图片
             this.img.gameObject.SetActive(true); // 显示图片
+            ReasoningPageImage.sprite = img.sprite;
         }
     }
     public void chuangru()
