@@ -13,6 +13,12 @@ public class ChoiceManager : MonoBehaviour
     private Image[] selectBox;             // 所有选中框
     private int selectedIndex = -1;          // 当前选中项（-1 表示未选）
 
+    public GameObject DialogBoxImage;  // 拖入你的关卡简介面板
+
+    public void OnMouseDown()
+    {
+        DialogBoxImage.SetActive(false);
+    }
     void Start()
     {
         int childCount = optionsParent.childCount;

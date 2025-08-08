@@ -16,7 +16,14 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("Level");  // 名字必须与场景文件一致
     }
-
+    public void ReturnToHome()
+    {
+        SceneManager.LoadScene("home"); // 请确保场景名和构建设置中一致
+    }
+    public void ReturnToSelectLevel()
+    {
+        SceneManager.LoadScene("SelectLevel"); // 请确保场景名和构建设置中一致
+    }  
     public void QuitGame()
     {
         Application.Quit();
